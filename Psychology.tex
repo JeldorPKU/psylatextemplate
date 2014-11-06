@@ -1,0 +1,56 @@
+% !Mode:: "TeX:UTF-8"
+
+% LaTeX template for Chinese essays in psychology
+% Author: Yumeng Jiang, Dept. of Psychology, PKU
+
+% Please typeset with xelatex + bibtex + xelatex + xelatex
+
+\documentclass[UTF8]{ctexart}
+
+% ==========Preamble==========
+
+\usepackage{apacite}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage[font=small,labelfont=bf,labelsep=quad,format=hang,textfont=it]{caption}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{titlesec}
+
+\pagestyle{plain}
+\titleformat*{\section}{\raggedright\bfseries\Large}
+\bibliographystyle{apacite}
+
+% ==========Title==========
+
+\title{\bfseries } 
+\author{蒋雨蒙\thanks{学号：1200013733；北京大学心理学系2012级本科生；}}
+\date{\today}
+
+% ==========Document==========
+
+\begin{document}
+
+\maketitle
+
+% ==========Abstract==========
+
+\begin{center}
+\parbox{130mm}{\zihao{-5}{\bfseries 摘\quad 要：}
+
+\par
+\vspace{1mm}
+\zihao{-5}{\bfseries 关键词：}关键词1\quad 关键词2\quad 关键词3}
+\end{center}
+
+% ==========Body==========
+\zihao{5}
+
+
+% ==========References==========
+\renewcommand{\refname}{参考文献}
+% enter your .bib file name in the parentheses in the following line.
+\bibliography{}
+
+\end{document}
