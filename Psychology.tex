@@ -5,7 +5,7 @@
 
 % Please typeset with xelatex + bibtex + xelatex + xelatex
 
-\documentclass[UTF8]{ctexart}
+\documentclass[UTF8,a4paper]{ctexart}
 
 % ==========Preamble==========
 
@@ -16,10 +16,9 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{titlesec}
 
 \pagestyle{plain}
-\titleformat*{\section}{\raggedright\bfseries\Large}
+\CTEXsetup[format=\Large\bfseries]{section}
 \bibliographystyle{apacite}
 
 % ==========Title==========
@@ -41,11 +40,11 @@
 % Abstract here
 \par
 \vspace{1mm}
-\zihao{-5}{\bfseries 关键词：}关键词1\quad 关键词2\quad 关键词3}
+{\bfseries 关键词：}关键词1\quad 关键词2\quad 关键词3}
 \end{center}
 
 % ==========Body==========
-\zihao{5}
+
 
 
 % ==========References==========
